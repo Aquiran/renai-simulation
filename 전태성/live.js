@@ -2,16 +2,16 @@ var say = 0;
 
 function    talk()  {
     if(say == 0)    {
-        document.getElementById("textbox").innerHTML = "* (지금 생각해보면 모든 것이 우연의 연속이었다.)"
+        document.getElementById("textbox").innerHTML = "* (지금 생각해보면 모든 것이 우연의 연속이었다.내가 몰락한 것도...그를 만난 것도...)"
         say += 1;
     }
     else if(say == 1)   {
-        document.getElementById("textbox").innerHTML = "* (잠자고 일어나니 그가 내 앞에 있었다.)"
+        document.getElementById("textbox").innerHTML = "* (그 날,잠자고 일어나니 그가 내 앞에 있었다.)"
         document.getElementById("kaein").style.display = "block"
         say += 1;
     }
     else if (say == 2)  {
-        document.getElementById("textbox").innerHTML = "* 태인:뭐야 여긴 도데체....저 아저씨는 도데체 뭐고?"
+        document.getElementById("textbox").innerHTML = "* 태인:뭐야 여긴 도대체....저 아저씨는 도데체 뭐고?"
         say += 1;
     }   
     else if(say == 3)   {
@@ -28,7 +28,7 @@ function    talk()  {
         document.getElementById("black").style.display = "block"
     }
     else if (say == 6)  {
-        document.getElementById("textbox").innerHTML = "* (의문의 남자가 마하9의 속도로 다가온다.)"
+        document.getElementById("textbox").innerHTML = "* ???:뭐야!갑자기!!!"
         document.getElementById("moving").style.display = "block"
         document.getElementById("kaein").style.display = "none"
         say += 2;
@@ -38,7 +38,9 @@ function    talk()  {
         say += 2
     }  
     else if(say == 8)   {
-        document.getElementById("textbox").innerHTML = "* 당신은 의문의 남자에게 부딪혀 사망했다."
+        document.getElementById("textbox").innerHTML = "* (의문의 남자가 마하9의 속도로 달려온다.)"
+        document.getElementById("moving2").style.display = "block"
+        document.getElementById("moving").style.display = "none"
         say += 2;
     }
     else if(say == 9)   {
@@ -107,10 +109,16 @@ function select2()  {
 function prolog()   {
     document.getElementById("black").style.display = "none"
     document.getElementById("prolog").style.display = "none"
+    document.getElementById("back").style.display = "none"
+    document.getElementById("room1").style.display = "block"
     document.getElementById("textbox").innerHTML = "* 구현 중"
     say += 1
 }
 
 function gameover() {
-    window.close()
+    window.location = "start.html"
+}
+
+function kaein()    {
+    window.open("https://www.youtube.com/watch?v=FKXyXnbM3zs")
 }

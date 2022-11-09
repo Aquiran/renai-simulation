@@ -21,12 +21,22 @@
     display:none;
 }
 
-.back   {
+#room1  {
     position:absolute;
     top:0%;
     left:0%;
     width:2000px;
-    height:943px;
+    height:100%;
+    z-index:-1;
+    display:none;
+}
+
+#back   {
+    position:absolute;
+    top:0%;
+    left:0%;
+    width:2000px;
+    height:100%;
     z-index:-1;
 }
 #talk   {
@@ -57,6 +67,17 @@
     z-index:1;
     display:none;
 }
+
+#moving2    {
+    width:400px;
+    height:450px;
+    position:absolute;
+    top:5%;
+    left:40%;
+    z-index:1;
+    display:none;
+}
+
 #select1    {
     background-color:lightcoral;
     border:5px double black;
