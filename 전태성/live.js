@@ -79,13 +79,12 @@ function    talk()  {
         document.getElementById("prolog").style.display = "block"
         say += 1;
     }  
-    else if(say == 17)   {
-        document.getElementById("black").style.display = "none"
-        document.getElementById("prolog").style.display = "none"
+    else if(say == 19)   {
+        document.getElementById("textbox").innerHTML = "* 구현 중이라고 누르지마 error뜬다"
         say += 1;
     } 
     else {
-        document.getElementById("textbox").innerHTML = "Error"
+        document.getElementById("textbox").innerHTML = "'Error'"
     }
 
 }
@@ -103,4 +102,15 @@ function select2()  {
     document.getElementById("select1").style.display = "none"
     document.getElementById("select2").style.display = "none"
     document.getElementById("black").style.display = "none"
+}
+
+function prolog()   {
+    document.getElementById("black").style.display = "none"
+    document.getElementById("prolog").style.display = "none"
+    document.getElementById("textbox").innerHTML = "* 구현 중"
+    say += 1
+}
+
+function gameover() {
+    window.close()
 }
