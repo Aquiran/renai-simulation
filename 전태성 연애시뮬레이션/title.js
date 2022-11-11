@@ -1,5 +1,5 @@
 function danger() {
-    window.location = "ranai.html"
+    window.location = "renai.html"
 }
 
 function start()   {
