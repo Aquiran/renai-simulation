@@ -53,6 +53,7 @@ function next() {
             document.getElementById("line").style.opacity = " 0 "
             document.getElementById("next").style.opacity = " 0 "
             document.getElementById("white").style.opacity = " 1 "
+            document.getElementById("next").style.display = " none "
         }, 500);
         setTimeout(() => {
             document.getElementById("white").style.opacity = " 0 "
@@ -60,7 +61,8 @@ function next() {
             document.getElementById("talk").style.opacity = " 1 "
             document.getElementById("line").style.opacity = " 1 "
             document.getElementById("next").style.opacity = " 1 "
-            document.getElementById("myroom").style.opacity = " 1 "
+            document.getElementById("myroom").style.opacity = " 1 " 
+            document.getElementById("next").style.display = " block "
         }, 2000);
         setTimeout(() => {
             document.getElementById("talk").innerHTML = " <br>【 태성 】<br> <br> 헉....헉헉...헉....후~"
@@ -134,12 +136,15 @@ function next() {
             document.getElementById("talk").style.opacity = " 0 "
             document.getElementById("line").style.opacity = " 0 "
             document.getElementById("next").style.opacity = " 0 "
+            document.getElementById("next").style.display = " none "
+            
         }, 0);
         setTimeout(() => {
             document.getElementById("street1").style.opacity = " 1 "
             document.getElementById("talk").style.opacity = " 1 "
             document.getElementById("line").style.opacity = " 1 "
             document.getElementById("next").style.opacity = " 1 "
+            document.getElementById("next").style.display = " block "
         }, 1000);
         say += 1
     }
@@ -148,7 +153,7 @@ function next() {
         say += 1
     }
     else if (say == 27) {
-        document.getElementById("talk").innerHTML = "<br> 평소에도 이렇게까지 사람이 없지는 않다.<br>...하물며 오늘은 '12월 23일'이다.<br>거리에 아무도 없는 이 현상은 굉장히 부자연스럽다."
+        document.getElementById("talk").innerHTML = "<br> 평소에도 이렇게까지 사람이 없지는 않다.<br>...하물며 오늘은 '12월 23일'이다.<br>거리에 아무도 없는 이 상황은 굉장히 부자연스럽다."
         say += 1
     }
     else if (say == 28) {
@@ -166,6 +171,7 @@ function next() {
             document.getElementById("talk").style.opacity = " 0 "
             document.getElementById("line").style.opacity = " 0 "
             document.getElementById("next").style.opacity = " 0 "
+            document.getElementById("next").style.display = " none "
         }, 500);
         setTimeout(() => {
             document.getElementById("white").style.opacity = " 0 "
@@ -178,6 +184,7 @@ function next() {
             document.getElementById("talk").style.opacity = " 1 "
             document.getElementById("line").style.opacity = " 1 "
             document.getElementById("next").style.opacity = " 1 "
+            document.getElementById("next").style.display = " block "
             document.getElementById("talk").innerHTML = "<br> 발자국소리...같으면서도 무언가 이질감이 느껴지는 소리가 들린다. "
         }, 2000);
     }
@@ -204,6 +211,8 @@ function next() {
             document.getElementById("black").style.opacity = " 1 "
             document.getElementById("attack").style.opacity = " 1 "
             document.getElementById("runover").style.opacity = " 1 "
+            document.getElementById("attack").style.display = "block"
+            document.getElementById("runover").style.display = "block"
             document.getElementById("talk").style.opacity = " 0 "
             document.getElementById("line").style.opacity = " 0 "
             document.getElementById("next").style.opacity = " 0 "
@@ -226,12 +235,14 @@ function next() {
             document.getElementById("talk").style.opacity = " 0 "
             document.getElementById("line").style.opacity = " 0 "
             document.getElementById("next").style.opacity = " 0 "
+            document.getElementById("next").style.display = " none "
         }, 0);
         setTimeout(() => {
             document.getElementById("allred").style.opacity = " 0 "
             document.getElementById("talk").style.opacity = " 1 "
             document.getElementById("line").style.opacity = " 1 "
             document.getElementById("next").style.opacity = " 1 "
+            document.getElementById("next").style.display = " block"
         }, 1000);
         say += 2
     }
@@ -264,8 +275,8 @@ function next() {
             document.getElementById("line").style.opacity = " 1 "
             document.getElementById("next").style.opacity = " 1 "
             document.getElementById("myroom").style.opacity = " 1 "
-            document.getElementById("talk").innerHTML = " <br> 【 태성 】<br> <br> 아무리 크리스마스라도 집 밖은 위험해..."
-        }, 2000);
+            document.getElementById("talk").innerHTML = " <br> 【 태성 】<br> <br> 아무리 크리스마스라도 집 밖은 위험해...<br>특히 사람이 많이 몰리는 이런 날에는..."
+        }, 3000);
         say += 2;
     }
     else if (say == 42) {
@@ -295,7 +306,7 @@ function next() {
         say += 2
     }
     else if (say == 48) {
-        document.getElementById("talk").innerHTML = "<br> 【 ??? 】<br> <br> 고개 숙여"
+        document.getElementById("talk").innerHTML = "<br> 【 ??? 】<br> <br>...고개 숙여"
         say += 2
     }
     else if (say == 49) {
@@ -303,7 +314,7 @@ function next() {
         say += 2
     }
     else if (say == 50) {
-        document.getElementById("talk").innerHTML = " <br> 내가 고개를 숙이자 앞에서 나이프 하나가 날아온다."
+        document.getElementById("talk").innerHTML = " <br> 반사적으로 고개를 숙이자 앞에서 나이프 하나가 날아왔다."
         say += 2
     }
     else if (say == 51) {
@@ -342,13 +353,66 @@ function next() {
     else if (say == 57) {
         document.getElementById("black").style.opacity = "1"
         document.getElementById("badend1").style.opacity = "1"
+        document.getElementById("badend1").style.display = "block"
         document.getElementById("talk").style.opacity = " 0 "
         document.getElementById("line").style.opacity = " 0 "
         document.getElementById("next").style.opacity = " 0 "
     }
     else if (say == 58) {
-        document.getElementById("talk").innerHTML = " <br> 【 ??? 】<br> <br> 다친데 없어? 아~너무 세게 던졌나?"
+        document.getElementById("talk").innerHTML = " <br> 【 ??? 】<br> <br> 다친데 없어?"
         say += 1
+    }
+    else if (say == 59) {
+        document.getElementById("talk").innerHTML = " <br> 【 태성 】<br> <br> 아!! 네...감사합ㄴ..."
+        say += 1
+    }
+    else if (say == 60) {
+        document.getElementById("talk").innerHTML = " <br> 갑자기 다리에 힘이 풀렸다...혹시?"
+        say += 1
+    }
+    else if (say == 61) {
+        document.getElementById("talk").innerHTML = " <br> 【 태성 】<br> <br> (어?? 설마...저 괴물한테 닿은건가?)"
+        say += 1
+    }
+    else if (say == 62) {
+        setTimeout(() => {
+            document.getElementById("talk").style.fontsize = "50px"
+        document.getElementById("talk").style.color = "red"
+        document.getElementById("allred").style.opacity = " 1 "
+        document.getElementById("talk").style.opacity = " 0 "
+        document.getElementById("line").style.opacity = " 0 "
+        document.getElementById("next").style.opacity = " 0 "
+        }, 0);
+        setTimeout(() => {
+            document.getElementById("talk").innerHTML = " <br> 아프다 아프다 아프다 아프다 아프다 아프다 아프다 아프다 아프다 아프다<br> 아프다 아프다 아프다 아프다 아프다 아프다 아프다 아프다 아프다 아프다<br> 아프다 아프다 아프다 아프다 아프다 아프다 아프다 아프다 아프다 아프다<br> 아프다 아프다 아프다 아프다 아프다 아프다 아프다 아프다 아프다 아프다"
+            document.getElementById("allred").style.opacity = " 0 "
+            document.getElementById("talk").style.opacity = " 1 "
+            document.getElementById("line").style.opacity = " 1 "
+            document.getElementById("next").style.opacity = " 1 "
+        }, 2000);
+        say += 1
+    }
+    else if (say == 63) {
+        document.getElementById("talk").style.fontsize = "35px"
+        document.getElementById("talk").style.color = "white"
+        document.getElementById("talk").innerHTML = " <br> 【 ??? 】<br> <br> 닿았구나...운이 나쁘네.<br> 하필 저 녀석이라니..."
+        say += 1
+    }
+    else if (say == 64) {
+        document.getElementById("talk").innerHTML = " <br> 【 ??? 】<br> <br> 지켜주고 있을 테니까 빨리 돌아와."
+        say += 1
+    }
+    else if (say == 65) {
+        document.getElementById("talk").innerHTML = " <br> 그 말을 끝으로 내 의식은 날아갔다."
+        say += 1
+    }
+    else if (say == 66) {
+            document.getElementById("talk").style.opacity = " 0 "
+            document.getElementById("line").style.opacity = " 0 "
+            document.getElementById("next").style.opacity = " 0 "
+            document.getElementById("prolog").style.opacity = "1"
+            document.getElementById("prolog").style.display = "block"
+            document.getElementById("black").style.opacity = "1"
     }
     else {
         document.getElementById("talk").innerHTML = "Error"
@@ -363,20 +427,28 @@ function attack() {
     document.getElementById("attack").style.opacity = "0"
     document.getElementById("runover").style.opacity = "0"
     document.getElementById("black").style.opacity = "0"
+    document.getElementById("attack").style.display = "none"
+    document.getElementById("runover").style.display = "none"
     document.getElementById("talk").style.opacity = " 1 "
     document.getElementById("line").style.opacity = " 1 "
     document.getElementById("next").style.opacity = " 1 "
 }
 function runover() {
-    document.getElementById("talk").innerHTML = "<br> 저건 인간이 아니다...내 힘으로는 도저히 이길 수 있을지 모르겠다."
+    document.getElementById("talk").innerHTML = "<br> 저건 인간이 아니다...내 힘으로 이길 수 있을지 모르겠다."
     say += 2;
     document.getElementById("attack").style.opacity = "0"
-    document.getElementById("runover").style.opacity = "0"
+    document.getElementById("attack").style.display = "none"
+    document.getElementById("runover").style.display = "none"
     document.getElementById("black").style.opacity = "0"
     document.getElementById("talk").style.opacity = " 1 "
     document.getElementById("line").style.opacity = " 1 "
     document.getElementById("next").style.opacity = " 1 "
 }
-function bad1() {
-    window.location = "title.html"
+
+function bad() {
+    window.location = "title.html" ;
+}
+
+function prolog()   {
+    window.location = "chapter1.html"
 }
