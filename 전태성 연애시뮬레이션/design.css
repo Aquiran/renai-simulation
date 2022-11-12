@@ -83,8 +83,8 @@ body{
     text-align:center;
     font-size:50px;
     color:white;
-    width:4%;
-    height:7%;
+    width:5%;
+    height:9%;
     background-color: transparent;
     position:absolute;
     top:90%;
@@ -119,7 +119,7 @@ body{
 
 #sik    {
     position:absolute;
-    top:1%;
+    top:4%;
     left:40%;
     width:20%;
     height:70%;
@@ -141,7 +141,7 @@ body{
 
 #krampus    {
     position:absolute;
-    top:5%;
+    top:10%;
     left:38%;
     width:25%;
     height:50%;
@@ -214,4 +214,15 @@ body{
     transition:0.1s;
     display:none;
     cursor:pointer;
+}
+
+#standing1   {
+    position:absolute;
+    top:4%;
+    left:40%;
+    width:20%;
+    height:56%;
+    opacity:0;
+    transition:0.2s;
+    z-index:2;
 }

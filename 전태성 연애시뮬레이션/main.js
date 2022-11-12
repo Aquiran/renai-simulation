@@ -74,7 +74,7 @@ function next() {
         say += 1;
     }
     else if (say == 12) {
-        document.getElementById("talk").innerHTML = " <br> (그때의 기억 떄문에 나는 인간관계 그자체를 두려워하게 되었고, <br>지금까지 집에서 히키코모리 생활을 하게 되었다.)"
+        document.getElementById("talk").innerHTML = " <br> (그 때의 기억 떄문에 나는 인간관계 그자체를 두려워하게 되었고, <br>지금까지 집에서 히키코모리 생활을 하게 되었다.)"
         say += 1;
     }
     else if (say == 13) {
@@ -113,7 +113,7 @@ function next() {
     else if (say == 21) {
         setTimeout(() => {
             document.getElementById("phone").style.opacity = "0"
-        }, 1500);
+        }, 500);
         document.getElementById("talk").innerHTML = "<br> 【 태성 】<br> <br> 하...알았어.준비해야 되니까 끊는다."
         say += 1
     }
@@ -161,7 +161,7 @@ function next() {
         say += 1
     }
     else if (say == 29) {
-        document.getElementById("talk").innerHTML = "<br> 그럼에도 안심할 수 없었던 나는 '김준'에게 전화해 보려고 전화기를 꺼냈다. "
+        document.getElementById("talk").innerHTML = "<br> 그럼에도 안심할 수 없었던 나는 '김준'에게 전화해 보려고 전화기를 꺼냈다."
         say += 1
     }
     else if (say == 30) {
@@ -185,22 +185,22 @@ function next() {
             document.getElementById("line").style.opacity = " 1 "
             document.getElementById("next").style.opacity = " 1 "
             document.getElementById("next").style.display = " block "
-            document.getElementById("talk").innerHTML = "<br> 발자국소리...같으면서도 무언가 이질감이 느껴지는 소리가 들린다. "
+            document.getElementById("talk").innerHTML = "<br> 발소리다...그런데..이게 사람이 낼 수 있는 속도인가?"
         }, 2000);
     }
     else if (say == 31) {
         document.getElementById("krampus").style.opacity = " 1 "
-        document.getElementById("talk").innerHTML = "<br> 【 태성 】<br> <br> 산타?"
+        document.getElementById("talk").innerHTML = "<br> 【 태성 】<br> <br> 뭐야 저게?....산타?"
         say += 1
     }
     else if (say == 32) {
-        document.getElementById("talk").innerHTML = "<br> 아니야...저건.."
+        document.getElementById("talk").innerHTML = "<br> 아니야...저건...뭐지?"
         document.getElementById("talk").style.fontsize = "50px"
         document.getElementById("talk").style.color = "red"
         say += 1
     }
     else if (say == 33) {
-        document.getElementById("talk").innerHTML = "<br> 생각할 틈 없이 눈앞의 괴물을 나를 공격해온다."
+        document.getElementById("talk").innerHTML = "<br> 생각할 틈 없이 눈앞의 괴물이 나를 공격해온다."
         document.getElementById("talk").style.fontsize = "35px"
         document.getElementById("talk").style.color = "white"
         say += 1
@@ -208,6 +208,7 @@ function next() {
     else if (say == 34) {
         document.getElementById("talk").innerHTML = "<br> 나는..."
         setTimeout(() => {
+            document.getElementById("krampus").style.display = "none"
             document.getElementById("black").style.opacity = " 1 "
             document.getElementById("attack").style.opacity = " 1 "
             document.getElementById("runover").style.opacity = " 1 "
@@ -219,7 +220,7 @@ function next() {
         }, 800);
     }
     else if (say == 35) {
-        document.getElementById("talk").innerHTML = "<br> 【 태성 】<br> <br> (위험해...저건 인간이 아니야...)"
+        document.getElementById("talk").innerHTML = "<br> 도망칠 수 없다고 판단하고 괴물을 공격하려했다."
         say += 2
     }
     else if (say == 36) {
@@ -306,7 +307,7 @@ function next() {
         say += 2
     }
     else if (say == 48) {
-        document.getElementById("talk").innerHTML = "<br> 【 ??? 】<br> <br>...고개 숙여"
+        document.getElementById("talk").innerHTML = "<br> 【 ??? 】<br> <br> 가만히 있어."
         say += 2
     }
     else if (say == 49) {
@@ -314,7 +315,21 @@ function next() {
         say += 2
     }
     else if (say == 50) {
-        document.getElementById("talk").innerHTML = " <br> 반사적으로 고개를 숙이자 앞에서 나이프 하나가 날아왔다."
+        setTimeout(() => {
+            document.getElementById("white").style.opacity = " 1 "
+            document.getElementById("talk").style.opacity = " 0 "
+            document.getElementById("line").style.opacity = " 0 "
+            document.getElementById("next").style.opacity = " 0 "
+            document.getElementById("next").style.display = " none "
+        }, 0);
+        setTimeout(() => {
+            document.getElementById("white").style.opacity = " 0 "
+            document.getElementById("talk").style.opacity = " 1 "
+            document.getElementById("line").style.opacity = " 1 "
+            document.getElementById("next").style.opacity = " 1 "
+            document.getElementById("next").style.display = " block "
+            document.getElementById("talk").innerHTML = " <br> 총소리...아니 대한민국에서 총기소지가 가능해?"
+        }, 600);
         say += 2
     }
     else if (say == 51) {
@@ -322,7 +337,7 @@ function next() {
         say += 2
     }
     else if (say == 52) {
-        document.getElementById("talk").innerHTML = " <br> 괴물은 당연하다는 듯이 나이프를 피하고는 어둠속으로 사라진다."
+        document.getElementById("talk").innerHTML = " <br> 괴물은 당연하다는 듯이 총알을 피하고는 어둠속으로 사라졌다."
         setTimeout(() => {
             document.getElementById("krampus").style.opacity = "0"
         }, 500);
@@ -338,7 +353,7 @@ function next() {
         say += 2
     }
     else if (say == 54) {
-        document.getElementById("talk").innerHTML = " <br> 【 태성 】<br> <br> 사라졌어...방금 그 목소리는.."
+        document.getElementById("talk").innerHTML = " <br> 【 태성 】<br> <br> 저 새끼는 총알도 피해? 그나저나 아까 목소리는 누구지?"
         say += 2
     }
     else if (say == 55) {
@@ -346,8 +361,8 @@ function next() {
         say += 2
     }
     else if (say == 56) {
-        document.getElementById("talk").innerHTML = " <br> 목소리가 들린 곳에서 @@한 사람이 등장한다."
-        //이곳에 히로인 사진이 들어갈 거임//
+        document.getElementById("talk").innerHTML = " <br> 목소리가 들린 곳을 돌아보니 나를 구해준 여성이 나타났다.<br><br>무심코 그 아름다운 모습에 눈을 빼앗겨버렸다."
+        document.getElementById("standing1").style.opacity= " 1 "
         say += 2
     }
     else if (say == 57) {
@@ -363,15 +378,15 @@ function next() {
         say += 1
     }
     else if (say == 59) {
-        document.getElementById("talk").innerHTML = " <br> 【 태성 】<br> <br> 아!! 네...감사합ㄴ..."
+        document.getElementById("talk").innerHTML = " <br> 【 태성 】<br> <br> 아!!...네,감사합ㄴ..."
         say += 1
     }
     else if (say == 60) {
-        document.getElementById("talk").innerHTML = " <br> 갑자기 다리에 힘이 풀렸다...혹시?"
+        document.getElementById("talk").innerHTML = " <br> 갑자기 다리에 힘이 풀렸다..."
         say += 1
     }
     else if (say == 61) {
-        document.getElementById("talk").innerHTML = " <br> 【 태성 】<br> <br> (어?? 설마...저 괴물한테 닿은건가?)"
+        document.getElementById("talk").innerHTML = " <br> 【 태성 】<br> <br> (어?? 설마...저 괴물한테 닿아서?)"
         say += 1
     }
     else if (say == 62) {
@@ -395,7 +410,7 @@ function next() {
     else if (say == 63) {
         document.getElementById("talk").style.fontsize = "35px"
         document.getElementById("talk").style.color = "white"
-        document.getElementById("talk").innerHTML = " <br> 【 ??? 】<br> <br> 닿았구나...운이 나쁘네.<br> 하필 저 녀석이라니..."
+        document.getElementById("talk").innerHTML = " <br> 【 ??? 】<br> <br> 저 괴물에 닿았구나...운이 나쁘네.<br> 하필 만난게 저 녀석이라니..."
         say += 1
     }
     else if (say == 64) {
@@ -404,6 +419,7 @@ function next() {
     }
     else if (say == 65) {
         document.getElementById("talk").innerHTML = " <br> 그 말을 끝으로 내 의식은 날아갔다."
+        document.getElementById("standing1").style.opacity= " 0 "
         say += 1
     }
     else if (say == 66) {
@@ -422,8 +438,9 @@ function next() {
 }
 
 function attack() {
-    document.getElementById("talk").innerHTML = "<br> 몸이 먼저 반응했다."
+    document.getElementById("talk").innerHTML = "<br> 【 태성 】<br> <br> (위험해...저건 사람이 아니야... <br>게다가 달리는 속도는 뭐가 저렇게 빨라!!)."
     say += 1;
+    document.getElementById("krampus").style.display = "block"
     document.getElementById("attack").style.opacity = "0"
     document.getElementById("runover").style.opacity = "0"
     document.getElementById("black").style.opacity = "0"
@@ -433,9 +450,11 @@ function attack() {
     document.getElementById("line").style.opacity = " 1 "
     document.getElementById("next").style.opacity = " 1 "
 }
+
 function runover() {
-    document.getElementById("talk").innerHTML = "<br> 저건 인간이 아니다...내 힘으로 이길 수 있을지 모르겠다."
+    document.getElementById("talk").innerHTML = "<br> 저건 아무리봐도 인간이 아니다...<br><br>저런 괴물이랑 싸우는 도박은 하고싶지 않다."
     say += 2;
+    document.getElementById("krampus").style.display = "block"
     document.getElementById("attack").style.opacity = "0"
     document.getElementById("attack").style.display = "none"
     document.getElementById("runover").style.display = "none"
@@ -450,5 +469,7 @@ function bad() {
 }
 
 function prolog()   {
-    window.location = "chapter1.html"
+    window.location = "chapter1.html" ;
 }
+
+
